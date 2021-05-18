@@ -129,6 +129,7 @@ module "db_instance" {
   deletion_protection      = var.deletion_protection
   delete_automated_backups = var.delete_automated_backups
 
+  s3_import_options = var.s3_import_options
   s3_import = var.s3_import
   tags = merge(var.tags, var.db_instance_tags)
 }
